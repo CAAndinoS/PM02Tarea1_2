@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02Tarea1_2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Información de la persona" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry x:Name="txtnombre"   Placeholder="nombre..."     PlaceholderColor="DarkGray"   Keyboard="Text"    HorizontalTextAlignment="Center" TextColor="#050505" BackgroundColor="#FAF2F2"/>
+        <Entry x:Name="txtapellido" Placeholder="apellido..."   PlaceholderColor="DarkGray" Keyboard="Text"    HorizontalTextAlignment="Center" TextColor="#050505" BackgroundColor="#FAF2F2"></Entry>
+        <Entry x:Name="txtedad"     Placeholder="edad..."       PlaceholderColor="DarkGray" Keyboard="Numeric" HorizontalTextAlignment="Center" TextColor="#050505" BackgroundColor="#FAF2F2"></Entry>
+        <Entry x:Name="txtcorreo"   Placeholder="correo..."     PlaceholderColor="DarkGray" Keyboard="Email"   HorizontalTextAlignment="Center" TextColor="#050505" BackgroundColor="#FAF2F2"  ></Entry>
+
+        <Button x:Name="btnenviar" Text="Enviar Datos" CornerRadius="40" HorizontalOptions="Center" BackgroundColor="Green" Clicked="btnenviar_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

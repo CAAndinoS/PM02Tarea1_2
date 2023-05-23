@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02Tarea1_2.Views.Empleados">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Margin="160"></Label>
+
+            <Label Text="{Binding nombres}"
+                   FontSize="32"
+                   TextColor="Green"
+                   HorizontalOptions="CenterAndExpand"
+                   x:Name="lbnombres" />
+
+            <Label Text="{Binding apellidos}"
+                   TextColor="Green"
+                   FontSize="32"
+                   Margin="30"
+                   HorizontalOptions="CenterAndExpand" x:Name="lbapellidos" />
+
+            <Label Text="{Binding edad}"
+                   TextColor="Green"
+                   FontSize="32"
+                   Margin="30"
+                   HorizontalOptions="CenterAndExpand" 
+                   x:Name="lbedad" />
+
+            <Label Text="{Binding correo}"
+                   TextColor="Green"
+                   FontSize="32"
+                   HorizontalOptions="CenterAndExpand"
+                   x:Name="lbcorreo" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
